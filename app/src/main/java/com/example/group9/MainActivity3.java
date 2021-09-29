@@ -7,52 +7,43 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity2 extends AppCompatActivity {
-    ImageButton avatar;
-    ImageButton jogging;
-    ImageButton yoga;
-    ImageButton skipping;
-    ImageButton backExercises;
+public class MainActivity3 extends AppCompatActivity {
+    ImageButton ava;
+    ImageButton tambah;
+    ImageButton create;
+    ImageButton backCustom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-        avatar = findViewById(R.id.avatar);
-        jogging = findViewById(R.id.jogging);
-        yoga = findViewById(R.id.yoga);
-        skipping = findViewById(R.id.skipping);
-        backExercises = findViewById(R.id.backExercises);
+        setContentView(R.layout.activity_main3);
+        ava = findViewById(R.id.ava);
+        tambah = findViewById(R.id.tambah);
+        create = findViewById(R.id.create);
+        backCustom = findViewById(R.id.backCustom);
 
-        avatar.setOnClickListener(new View.OnClickListener() {
+        ava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainActivity2.class));
             }
         });
 
-        jogging.setOnClickListener(new View.OnClickListener() {
+        tambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainActivity2.class));
             }
         });
 
-        yoga.setOnClickListener(new View.OnClickListener() {
+        create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainActivity2.class));
             }
         });
 
-        skipping.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), MainActivity2.class));
-            }
-        });
-
-        backExercises.setOnClickListener(new View.OnClickListener() {
+        backCustom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), MainActivity2.class));
